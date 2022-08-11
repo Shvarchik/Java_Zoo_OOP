@@ -13,7 +13,7 @@ public class Chicken extends Bird{
         System.out.println("кудах-тах-тах");
     }
 
-    @override
+    @Override
     public void Fly() {
         System.out.println(String.format("%s %d", "лечу на бреющем полете, высота ",this.heightOfFly));
     }
