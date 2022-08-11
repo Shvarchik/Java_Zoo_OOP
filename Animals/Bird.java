@@ -9,7 +9,8 @@ public abstract class Bird extends Animal{
         this.heightOfFlight = heightOfFlight;
     }
 
-    public abstract void makeSound();
+    @Override
+    public abstract void MakeSound();
 
     public void Fly(){
         System.out.println("Я лечу на высоте" + this.heightOfFlight);

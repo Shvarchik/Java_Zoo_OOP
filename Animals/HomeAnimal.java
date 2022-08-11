@@ -19,12 +19,11 @@ public abstract class HomeAnimal extends Animal {
         System.out.println("I love you");
     }
 
-    public abstract void makeSound();
+    public abstract void MakeSound();
 
     @Override
     public String printInfo(){
         return String.format("%s  dateOfBirth: %s, vaccinated: %b, name: %s, breed: %s", 
         super.printInfo(), this.dateOfBirth, this.vaccinated, this.name, this.breed);
     }
-
 }

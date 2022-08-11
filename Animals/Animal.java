@@ -11,10 +11,10 @@ public abstract class Animal {
         this.weight = weight;
         this.eyesColor = eyesColor;
         this.color = color;
-    };
+    }
 
 
-    public abstract void makeSound();
+    public abstract void MakeSound();
 
     public String printInfo(){
         return String.format("%d: height, %d: weight, %s: eyesColor, %s: color", height, weight, eyesColor, color);
