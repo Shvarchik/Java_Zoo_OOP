@@ -2,9 +2,10 @@ package Animals;
 
 public class Dog extends HomeAnimal {
     
-    Boolean trained;
+    private Boolean trained;
+
     public Dog(int height, int weight, String eyeColor, String name, String breed, Boolean vaccinated, String color, String dateOfBirth, Boolean trained){
-        super(height, weight, eyeColor, name, breed, vaccinated, color, dateOfBirth);
+        super(name, breed, height, weight, eyeColor, color, dateOfBirth, vaccinated);
         this.trained = trained;
     }
 
@@ -14,12 +15,16 @@ public class Dog extends HomeAnimal {
     }
     
     public void love(){
-        System.out.println("I love you");
+        System.out.println("I love you, Woof!");
     }
 
     public void training(){
         trained = true;
     }
+    public Boolean getTrained (){
+        return trained;
+    }
+
     @Override
     public String printInfo(){
         return String.format("%s\ntrained: ", super.printInfo(), this.trained);

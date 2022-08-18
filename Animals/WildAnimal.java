@@ -1,4 +1,8 @@
-﻿package Animals;
+﻿// Абстрактный класс Дикое животное со следующими свойствами:
+// 2.1 Место обитания
+// 2.2 Дата нахождения
+
+package Animals;
 
 public abstract class WildAnimal extends Animal {
 

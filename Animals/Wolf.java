@@ -19,4 +19,8 @@ public class Wolf extends WildAnimal {
     public String printInfo(){
         return String.format("%s, %s", super.printInfo(), this.pack_leader);
     }
+    public String getPackLeader (){
+        return pack_leader;
+    }
+
 }

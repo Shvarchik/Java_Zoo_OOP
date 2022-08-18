@@ -1,3 +1,13 @@
+// абстрактный класс, реализующий интерфейс Животное:
+// 1.Домашнее животное со следующими свойствами:
+// 1.1 Кличка
+// 1.2 Порода
+// 1.3 Наличие прививок
+// 1.4 Цвет шерсти
+// 1.5 Дата рождения
+// И методами:
+// 1.5 Проявлять ласку
+
 package Animals;
 
 public abstract class HomeAnimal extends Animal {
@@ -6,8 +16,8 @@ public abstract class HomeAnimal extends Animal {
     String name;
     String breed;
 
-    public HomeAnimal(int height, int weight, String eyesColor, String color, String dateOfBirth, 
-    Boolean vaccinated, String name, String breed){
+    public HomeAnimal(String name,String breed, int height, int weight, String eyesColor, String color, String dateOfBirth, 
+    Boolean vaccinated){
         super(height, weight, eyesColor, eyesColor);
         this.dateOfBirth = dateOfBirth;
         this.vaccinated = vaccinated;
@@ -23,7 +33,7 @@ public abstract class HomeAnimal extends Animal {
 
     @Override
     public String printInfo(){
-        return String.format("%s  dateOfBirth: %s, vaccinated: %b, name: %s, breed: %s", 
-        super.printInfo(), this.dateOfBirth, this.vaccinated, this.name, this.breed);
+        return String.format("name: %s, breed: %s, %s, dateOfBirth: %s, vaccinated: %b", 
+        this.name, this.breed, super.printInfo(), this.dateOfBirth, this.vaccinated);
     }
 }

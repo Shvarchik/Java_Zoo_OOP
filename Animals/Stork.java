@@ -7,6 +7,6 @@ public class Stork extends Bird{
 
     @Override
     public void MakeSound() {
-        System.out.println("Я не знаю какие звуки издают аисты, пусть каркает");
+        System.out.println("тук-тук-тук");
     }
 }

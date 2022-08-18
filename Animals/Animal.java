@@ -1,3 +1,11 @@
+// реализовать абстрактный класс "Животное" со следующими полями:
+// 1.Рост животного
+// 2.Вес животного
+// 3.Цвет глаз животного
+// И методы:
+// 1.Издать звук
+// 2.Напечатать информацию о животном
+
 package Animals;
 
 public abstract class Animal {
@@ -12,7 +20,6 @@ public abstract class Animal {
         this.eyesColor = eyesColor;
         this.color = color;
     }
-
 
     public abstract void MakeSound();
 
