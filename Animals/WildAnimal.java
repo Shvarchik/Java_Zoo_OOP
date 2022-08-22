@@ -16,7 +16,7 @@ public abstract class WildAnimal extends Animal {
     }
 
     @Override
-    public abstract void MakeSound();
+    public abstract void makeSound();
 
     @Override
     public String printInfo() {

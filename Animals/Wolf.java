@@ -11,13 +11,13 @@ public class Wolf extends WildAnimal {
     }
 
     @Override
-    public void MakeSound() {
-        System.out.println("RRR");
+    public void makeSound() {
+        System.out.println("OUUU!!!");
     }
 
     @Override
     public String printInfo(){
-        return String.format("%s, %s", super.printInfo(), this.pack_leader);
+        return String.format("Волк %s, %s", super.printInfo(), this.pack_leader);
     }
     public String getPackLeader (){
         return pack_leader;

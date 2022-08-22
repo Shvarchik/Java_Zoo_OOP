@@ -7,7 +7,7 @@ public class Tiger extends WildAnimal{
     }
 
     @Override
-    public void MakeSound(){
+    public void makeSound(){
         System.out.println("Рычу - РРРРРРР");
     }
 }

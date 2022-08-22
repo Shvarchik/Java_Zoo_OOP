@@ -24,12 +24,13 @@ public abstract class HomeAnimal extends Animal {
         this.name = name;
         this.breed = breed;
     }
-
+    
     public void love(){
         System.out.println("I love you");
     }
-
-    public abstract void MakeSound();
+    
+    @Override
+    public abstract void makeSound();
 
     @Override
     public String printInfo(){

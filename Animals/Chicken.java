@@ -2,17 +2,17 @@
 
 public class Chicken extends Bird{
     
-    public Chicken (int height, int weight,  String eyeColor, String color, int heightOfFly) {
+    public Chicken (int height, int weight,  String eyeColor, String color, double heightOfFly) {
         super (height, weight, eyeColor, color, heightOfFly);
     }
     
     @Override
-    public void MakeSound() {
+    public void makeSound() {
         System.out.println("кудах-тах-тах");
     }
 
-    // @Override
-    // public void Fly() {
-    //     System.out.println(String.format("%s %d", "лечу на бреющем полете, высота",this.heightOfFlight));
-    // }
+    @Override
+    public String printInfo(){
+        return String.format("Курица %s", super.printInfo());
+    }
 }

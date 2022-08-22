@@ -10,23 +10,24 @@ public class Dog extends HomeAnimal {
     }
 
     @Override
-    public void MakeSound(){
-        System.out.println("Woof!");
+    public void makeSound(){
+        System.out.println("Гав-гав!");
     }
     
     public void love(){
-        System.out.println("I love you, Woof!");
+        System.out.println("Я тебя люблю, гав!");
     }
 
-    public void training(){
+    public void getTrained(){
         trained = true;
     }
-    public Boolean getTrained (){
-        return trained;
+    public void training (String name){
+        System.out.println(String.format("%s : Я учусь ходить на задних лапах, гав", this.name));
+        this.trained = true;
     }
 
     @Override
     public String printInfo(){
-        return String.format("%s\ntrained: ", super.printInfo(), this.trained);
+        return String.format("Собака %s, trained: %b ", super.printInfo(), this.trained);
     }
 }

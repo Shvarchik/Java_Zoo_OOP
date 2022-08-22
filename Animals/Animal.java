@@ -21,10 +21,10 @@ public abstract class Animal {
         this.color = color;
     }
 
-    public abstract void MakeSound();
+    public abstract void makeSound();
 
     public String printInfo(){
-        return String.format("%d: height, %d: weight, %s: eyesColor, %s: color", height, weight, eyesColor, color);
+        return String.format("рост: %d, вес: %d, цвет глаз: %s, окрас: %s", height, weight, eyesColor, color);
     }
 }
 

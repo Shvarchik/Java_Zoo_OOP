@@ -8,22 +8,22 @@ package Animals;
 
 public abstract class Bird extends Animal{
 
-    private int heightOfFlight;
+    private double heightOfFlight;
 
-    protected Bird(int height, int weight, String eyeColor, String color, int heightOfFlight){
+    protected Bird(int height, int weight, String eyeColor, String color, double heightOfFlight){
         super(height, weight, eyeColor, color);
         this.heightOfFlight = heightOfFlight;
         
     }
 
     @Override
-    public abstract void MakeSound();
+    public abstract void makeSound();
 
     public void Fly(){
-        System.out.println(String.format("Я лечу на высоте %d метров", this.heightOfFlight));
+        System.out.println(String.format("Я лечу на высоте %.1f метров", this.heightOfFlight));
     }
 
     public String printInfo(){
-        return String.format("%s\nheight of fly: %d", super.printInfo(), this.heightOfFlight);
+        return String.format("%s, height of fly: %.1f", super.printInfo(), this.heightOfFlight);
     }
 }
