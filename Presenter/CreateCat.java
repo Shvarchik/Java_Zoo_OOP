@@ -6,7 +6,11 @@ import View.ConsoleViewAnimal;
 
 public class CreateCat implements Creatable{
 
-    ConsoleViewAnimal view = new ConsoleViewAnimal();
+    ConsoleViewAnimal view;
+ 
+    public CreateCat() {
+        view = new ConsoleViewAnimal();
+    }
 
     @Override
     public Animal create() {

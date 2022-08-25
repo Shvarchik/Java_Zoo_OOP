@@ -17,7 +17,7 @@ public class MenuEntrance {
     
     public MenuEntrance(Zoo zoo) {
         
-        view = new ConsoleViewAnimal();
+        view = new ConsoleViewAnimal ();
         p = new Presenter(zoo);
     }
 
