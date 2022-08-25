@@ -49,22 +49,18 @@ public class ConsoleViewAnimal implements View {
         return in.nextDouble();
     }
 
-    @Override
     public Integer getHeight() {
         System.out.printf("Height: ");
         return in.nextInt();
     }
-    @Override
     public Integer getWeight() {
         System.out.printf("Weight: ");
         return in.nextInt();
     }    
-    @Override
     public String getEyeColor() {
         System.out.printf("eyeClolr: ");
         return in.nextLine();
     }
-    @Override
     public String getColor() {
         System.out.printf("Color: ");
         return in.nextLine();
